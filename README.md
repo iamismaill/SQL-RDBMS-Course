@@ -34,7 +34,7 @@ This course is designed for **Semester 4 Computer Science students** at **CITYCO
 This course is divided into multiple weeks, each focusing on different aspects of SQL and RDBMS.
 
 ### Week 1: **Introduction to SQL and RDBMS**  
-[Link to Week 1 Content]([https://github.com/iamismaill/SQL-RDBMS-Course/tree/main/Week-1_Introduction](https://github.com/iamismaill/SQL-RDBMS-Course/blob/main/Week-1_Introduction%20%20/Readme.md))
+[Link to Week 1 Content](https://github.com/iamismaill/SQL-RDBMS-Course/blob/main/Week-1_Introduction%20%20/Readme.md)
 
 - Overview of SQL and its importance in database management
 - Introduction to Relational Database Management Systems (RDBMS)
