@@ -44,9 +44,8 @@ WHERE condition;
 
 ---
 ## SQL Queries and RDBMS Concepts
-
-This document covers the essential SQL queries and concepts used in Relational Database Management Systems (RDBMS). It includes instructions for querying, inserting, updating, and deleting data, as well as filtering and sorting data.
 ---
+
 ## Querying Data
 
 To retrieve data from a database, you use the `SELECT` statement. You can specify the columns you want to retrieve and apply various conditions to filter the data.
@@ -107,7 +106,7 @@ Below is an example of a simple **Student** table in an RDBMS.
 - **Rows**:
   - Each row in this table represents an individual student's record.
  
-  # SQL Constraints: Ensuring Data Integrity in Databases
+# SQL Constraints: Ensuring Data Integrity in Databases
 
 SQL constraints are rules enforced on data columns in a table to maintain accuracy, consistency, and reliability in the database. They restrict the type of data that can be entered into a column, ensuring data integrity.
 
