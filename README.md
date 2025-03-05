@@ -2,6 +2,7 @@
 
 
 
+![image](https://github.com/user-attachments/assets/874f49ae-9bfe-47f5-bf29-d75cd942b4d6)
 
 
 # SQL-RDBMS Course
