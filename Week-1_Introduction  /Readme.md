@@ -159,7 +159,7 @@ Use case: The Email column must have unique values, ensuring no two users have t
 The PRIMARY KEY constraint uniquely identifies each record in a table. It enforces both the UNIQUE and NOT NULL constraints on a column or a group of columns.
 
 ### Example:
-```
+```sql
 CREATE TABLE Products (
   ProductID INT PRIMARY KEY,
   ProductName VARCHAR(100)
@@ -172,7 +172,7 @@ A table can only have one PRIMARY KEY, and it can consist of one or multiple col
 A FOREIGN KEY is a column (or a group of columns) that links two tables by referring to the PRIMARY KEY of another table. It maintains referential integrity between related tables.
 
 ### Example:
-```
+```sql
 CREATE TABLE Orders (
   OrderID INT PRIMARY KEY,
   CustomerID INT,
@@ -186,7 +186,7 @@ Use case: In the Orders table, the CustomerID is a FOREIGN KEY referencing the C
 The CHECK constraint ensures all values in a column meet a specific condition.
 
 ### Example:
-```
+```sql
 CREATE TABLE Employees (
   EmployeeID INT PRIMARY KEY,
   Name VARCHAR(100),
@@ -199,7 +199,9 @@ Use case: The Age column should only allow values greater than or equal to 18, p
 An INDEX is used to speed up searches and queries by creating an internal structure that allows quick data retrieval. It does not enforce data constraints but improves performance.
 
 ### Example:
-``` CREATE INDEX idx_email ON Users (Email); ```
+```sql
+CREATE INDEX idx_email ON Users (Email);
+```
 
 # Summary of SQL Constraints
 
