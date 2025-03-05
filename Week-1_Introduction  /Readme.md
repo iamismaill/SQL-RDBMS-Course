@@ -39,7 +39,7 @@ SQL statements follow a specific syntax and structure. Here's a basic structure 
 ```sql
 SELECT column1, column2, ...
 FROM table_name
-WHERE condition;```
+WHERE condition;  ```
 
 ---
 ## SQL Queries and RDBMS Concepts
