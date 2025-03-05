@@ -106,3 +106,113 @@ Below is an example of a simple **Student** table in an RDBMS.
 
 - **Rows**:
   - Each row in this table represents an individual student's record.
+ 
+  # SQL Constraints: Ensuring Data Integrity in Databases
+
+SQL constraints are rules enforced on data columns in a table to maintain accuracy, consistency, and reliability in the database. They restrict the type of data that can be entered into a column, ensuring data integrity.
+
+Constraints can be applied at two levels:
+- **Column-level**: Applied to a specific column.
+- **Table-level**: Applied to multiple columns or the entire table.
+
+## Types of SQL Constraints
+
+### 1. NOT NULL Constraint
+The `NOT NULL` constraint ensures that a column cannot store `NULL` values. This means that every row must have a valid (non-null) value for this column.
+
+#### Example:
+```sql
+CREATE TABLE Students (
+  StudentID INT NOT NULL,
+  Name VARCHAR(100) NOT NULL,
+  Age INT
+);
+```
+Use case: The Name column must always have a value, ensuring that no student record can be created without a name.
+
+### 2. DEFAULT Constraint
+The DEFAULT constraint assigns a default value to a column when no value is provided during insertion.
+
+### Example:
+```sql
+CREATE TABLE Employees (
+  EmployeeID INT NOT NULL,
+  Name VARCHAR(100),
+  Salary DECIMAL(10, 2) DEFAULT 50000.00
+);
+```
+Use case: If no salary is provided for an employee, the Salary column will default to 50,000.
+### 3. UNIQUE Constraint
+The UNIQUE constraint ensures that all values in a column are different. It prevents duplicate entries in a column.
+
+### Example
+```sql
+CREATE TABLE Users (
+  UserID INT NOT NULL,
+  Email VARCHAR(100) UNIQUE,
+  Name VARCHAR(100)
+);
+```
+Use case: The Email column must have unique values, ensuring no two users have the same email address
+
+### 4. PRIMARY KEY Constraint
+The PRIMARY KEY constraint uniquely identifies each record in a table. It enforces both the UNIQUE and NOT NULL constraints on a column or a group of columns.
+
+### Example:
+```
+CREATE TABLE Products (
+  ProductID INT PRIMARY KEY,
+  ProductName VARCHAR(100)
+);
+```
+Use case: The ProductID column uniquely identifies each product in the table and cannot have NULL values.
+A table can only have one PRIMARY KEY, and it can consist of one or multiple columns (Composite Key).
+
+### 5. FOREIGN KEY Constraint
+A FOREIGN KEY is a column (or a group of columns) that links two tables by referring to the PRIMARY KEY of another table. It maintains referential integrity between related tables.
+
+### Example:
+```
+CREATE TABLE Orders (
+  OrderID INT PRIMARY KEY,
+  CustomerID INT,
+  FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);
+```
+
+Use case: In the Orders table, the CustomerID is a FOREIGN KEY referencing the CustomerID in the Customers table. This ensures that an order is always associated with an existing customer.
+
+### 6. CHECK Constraint
+The CHECK constraint ensures all values in a column meet a specific condition.
+
+### Example:
+```
+CREATE TABLE Employees (
+  EmployeeID INT PRIMARY KEY,
+  Name VARCHAR(100),
+  Age INT CHECK (Age >= 18)
+);
+```
+Use case: The Age column should only allow values greater than or equal to 18, preventing invalid entries.
+
+### 7. INDEX
+An INDEX is used to speed up searches and queries by creating an internal structure that allows quick data retrieval. It does not enforce data constraints but improves performance.
+
+### Example:
+``` CREATE INDEX idx_email ON Users (Email); ```
+
+# Summary of SQL Constraints
+
+| **Constraint**   | **Description**                                                 |
+|------------------|-----------------------------------------------------------------|
+| **NOT NULL**     | Ensures no `NULL` values in a column.                          |
+| **DEFAULT**      | Provides a default value if none is specified.                  |
+| **UNIQUE**       | Ensures all values in a column are distinct.                    |
+| **PRIMARY KEY**  | Uniquely identifies each record and prevents `NULL` values.     |
+| **FOREIGN KEY**  | Links two tables and ensures referential integrity.             |
+| **CHECK**        | Ensures that data meets specified conditions.                   |
+| **INDEX**        | Improves query performance by speeding up searches.             |
+
+
+
+
