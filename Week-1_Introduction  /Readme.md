@@ -217,4 +217,120 @@ CREATE INDEX idx_email ON Users (Email);
 
 
 
+# SQL Data Types
+
+SQL data types define the type of data that a column can store. They help ensure data integrity, optimize storage, and improve database performance. SQL data types may vary slightly between different database management systems (DBMS) such as MySQL, PostgreSQL, SQL Server, and Oracle.
+
+---
+
+## 1. Numeric Data Types
+
+Numeric data types store numbers and are categorized into **exact** and **approximate** types.
+
+### A. Exact Numeric Data Types
+These data types store precise numeric values, making them suitable for values that require accuracy, such as IDs, counts, and monetary values.
+
+- **INT / INTEGER**: Stores whole numbers (e.g., `10`, `250`, `-50`).
+  - Example: `Age INT`
+
+- **SMALLINT**: A smaller integer type that uses less storage.
+  - Example: `TinyValue SMALLINT`
+
+- **BIGINT**: Stores very large whole numbers, useful for large datasets.
+  - Example: `Population BIGINT`
+
+- **DECIMAL (p, s) / NUMERIC (p, s)**: Stores fixed-point numbers with precision (p) and scale (s). Used for currency or exact calculations.
+  - Example: `Price DECIMAL(10, 2)` (Stores values like `99999999.99`)
+
+- **TINYINT**: Stores very small integers, usually 1 byte in size.
+  - Example: `Level TINYINT`
+
+### B. Approximate Numeric Data Types
+These store floating-point numbers, which are useful for scientific calculations but can introduce rounding errors.
+
+- **FLOAT (n)**: Stores floating-point numbers, allowing decimals but with limited precision.
+  - Example: `Temperature FLOAT(5)`
+
+- **REAL**: Similar to `FLOAT` but with less precision than `DOUBLE`.
+  - Example: `Measurement REAL`
+
+- **DOUBLE PRECISION**: Stores floating-point numbers with higher precision than `FLOAT`.
+  - Example: `Distance DOUBLE PRECISION`
+
+---
+
+## 2. Character/String Data Types
+
+String data types store textual information.
+
+- **CHAR (n)**: Fixed-length character string. If the stored text is shorter than the defined length, spaces are added to fill the remaining space.
+  - Example: `CountryCode CHAR(3)` (e.g., 'USA', 'CAN')
+
+- **VARCHAR (n)**: Variable-length character string. More storage-efficient than `CHAR`, as it only stores the actual length of the text.
+  - Example: `Name VARCHAR(100)`
+
+- **TEXT**: Stores large amounts of text (e.g., paragraphs or full documents). Not suitable for indexing in some databases.
+  - Example: `Description TEXT`
+
+- **NCHAR (n) / NVARCHAR (n)**: Unicode character storage for international character sets.
+  - Example: `CityName NVARCHAR(50)`
+
+---
+
+## 3. Date and Time Data Types
+
+These data types store date, time, or both.
+
+- **DATE**: Stores only the date (`YYYY-MM-DD`).
+  - Example: `BirthDate DATE`
+
+- **TIME**: Stores only the time (`HH:MI:SS`).
+  - Example: `EventTime TIME`
+
+- **DATETIME**: Stores both date and time (`YYYY-MM-DD HH:MI:SS`).
+  - Example: `OrderDate DATETIME`
+
+- **TIMESTAMP**: Stores date and time with automatic time-zone support in some databases.
+  - Example: `LastUpdated TIMESTAMP`
+
+- **YEAR**: Stores only the year (`YYYY`).
+  - Example: `YearEstablished YEAR`
+
+---
+
+## 4. Boolean Data Type
+
+- **BOOLEAN**: Stores `TRUE` or `FALSE` values (represented as 1 and 0 in some databases).
+  - Example: `IsActive BOOLEAN`
+
+---
+
+## 5. JSON and XML Data Types
+
+Some modern databases provide support for structured data formats.
+
+- **JSON**: Stores JSON (JavaScript Object Notation) data.
+  - Example: `UserData JSON`
+
+- **XML**: Stores XML (Extensible Markup Language) data.
+  - Example: `ProductInfo XML`
+
+---
+
+## 6. Special Data Types
+
+Some databases provide special-purpose data types.
+
+- **ENUM**: A predefined set of string values (e.g., "Male", "Female", "Other").
+  - Example: `Gender ENUM('Male', 'Female', 'Other')`
+
+- **SET**: A collection of values from a predefined list.
+  - Example: `Hobbies SET('Reading', 'Traveling', 'Music')`
+
+- **GEOMETRY**: Stores spatial data like points, lines, and polygons (used in GIS databases).
+  - Example: `Location GEOMETRY`
+
+---
+
+
 
