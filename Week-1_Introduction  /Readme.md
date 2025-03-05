@@ -39,7 +39,8 @@ SQL statements follow a specific syntax and structure. Here's a basic structure 
 ```sql
 SELECT column1, column2, ...
 FROM table_name
-WHERE condition;  ```
+WHERE condition;
+```
 
 ---
 ## SQL Queries and RDBMS Concepts
@@ -54,6 +55,7 @@ To retrieve data from a database, you use the `SELECT` statement. You can specif
 ```sql
 SELECT column1, column2
 FROM table_name;
+```
 This statement retrieves the values from column1 and column2 in the table_name table.
 ---
 # SQL Data Operations
@@ -66,7 +68,7 @@ You can filter the retrieved data using the `WHERE` clause. It allows you to spe
 SELECT column1, column2
 FROM table_name
 WHERE condition;
-
+```
 ## Condition Operators:
 = : Equal to
 <> : Not equal to
@@ -74,10 +76,33 @@ WHERE condition;
 > : Greater than
 <= : Less than or equal to
 >= : Greater than or equal to
-You can also use logical operators to combine multiple conditions:
 
-AND
-OR
-NOT
-Sorting Data
-You can sort the retrieved data using the ORDER BY clause. It allows you to specify the columns to sort the data by.
+
+# RDBMS Concepts
+
+A table in a Relational Database Management System (RDBMS) is a structured collection of related data organized in rows and columns. It represents a real-world entity (e.g., Students, Employees, Products).
+
+## Structure of a Table
+
+A table consists of:
+- **Columns (Fields/Attributes)**: Define the type of data stored (e.g., id, name, age).
+- **Rows (Records)**: Represent actual data entries in the table.
+## Example: Student Table
+
+Below is an example of a simple **Student** table in an RDBMS.
+
+| **StudentID** | **Name**  | **Age** | **Major**      |
+|---------------|-----------|---------|----------------|
+| 1             | John Doe  | 20      | Computer Science|
+| 2             | Jane Smith| 22      | Mathematics    |
+| 3             | Alice Lee | 21      | Physics        |
+
+### Table Breakdown:
+- **Columns**:
+  - `StudentID`: A unique identifier for each student.
+  - `Name`: The name of the student.
+  - `Age`: The age of the student.
+  - `Major`: The student's major in university.
+
+- **Rows**:
+  - Each row in this table represents an individual student's record.
