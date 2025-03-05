@@ -55,7 +55,7 @@ To retrieve data from a database, you use the `SELECT` statement. You can specif
 SELECT column1, column2
 FROM table_name;
 ```
-This statement retrieves the values from column1 and column2 in the table_name table.
+
 ---
 # SQL Data Operations
 
