@@ -1,8 +1,8 @@
-                            ![image](https://github.com/user-attachments/assets/fa0bee1c-ed5a-4346-bc75-c0aba1e9ab96)
 
 
 
-![image](https://github.com/user-attachments/assets/874f49ae-9bfe-47f5-bf29-d75cd942b4d6)
+<img src="https://github.com/user-attachments/assets/874f49ae-9bfe-47f5-bf29-d75cd942b4d6" width="300" height="200" />
+
 
 
 # SQL-RDBMS Course
