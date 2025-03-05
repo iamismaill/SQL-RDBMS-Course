@@ -40,10 +40,12 @@ SQL statements follow a specific syntax and structure. Here's a basic structure 
 SELECT column1, column2, ...
 FROM table_name
 WHERE condition;
-# SQL Queries and RDBMS Concepts
+
+---
+## SQL Queries and RDBMS Concepts
 
 This document covers the essential SQL queries and concepts used in Relational Database Management Systems (RDBMS). It includes instructions for querying, inserting, updating, and deleting data, as well as filtering and sorting data.
-
+---
 ## Querying Data
 
 To retrieve data from a database, you use the `SELECT` statement. You can specify the columns you want to retrieve and apply various conditions to filter the data.
@@ -53,7 +55,7 @@ To retrieve data from a database, you use the `SELECT` statement. You can specif
 SELECT column1, column2
 FROM table_name;
 This statement retrieves the values from column1 and column2 in the table_name table.
-
+---
 # SQL Data Operations
 
 ## Filtering Data
