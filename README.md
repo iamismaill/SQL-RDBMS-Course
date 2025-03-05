@@ -1,11 +1,13 @@
 
 
 
-<img src="https://github.com/user-attachments/assets/874f49ae-9bfe-47f5-bf29-d75cd942b4d6" width="300" height="200" />
-
 
 
 # SQL-RDBMS Course
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/874f49ae-9bfe-47f5-bf29-d75cd942b4d6" width="300" height="200" />
+</p>
+
 
 This course is designed for **Semester 4 Computer Science students** at **CITYCOT University** and aims to provide a comprehensive introduction to **Relational Database Management Systems (RDBMS)** and **SQL (Structured Query Language)**. Throughout this course, you will gain a solid understanding of RDBMS concepts, SQL syntax, and querying techniques essential for efficient database management and design.
 
